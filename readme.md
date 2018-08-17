@@ -2,6 +2,14 @@
 
 This MVC framework is written in PHP and is based on an opensource framework by [Brad Traversy](http://traversymedia.com) 
 
+## Quick use:
+
+You can use this framework in 2 ways:
+
+1. Full PHP MVC => Views are written in here and saved in the app/views folder.
+
+2. Partial PHP MVC (Only Model and Controller) => The controller has api endpoints which output JSON data and the Views are written in another language. Could even be hosted in another container or server. This would purely serve as the backend.
+
 ## Requirements
 
 This setup uses php composer and that can be installed by using [homebrew](https://brew.sh) on the mac or [chocolatey](https://chocolatey.org)
