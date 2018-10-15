@@ -17,4 +17,5 @@
 
         // call your view 
         $this->view('pages/index', $data);
+      }
     }
