@@ -21,21 +21,20 @@
     }
 
     //example: db data - select
-    public function getAllPeople() {
-      $this->db->query('SELECT * FROM tbl_people');
+    public function getAllMessages() {
+      $this->db->query('SELECT * FROM tbl_emails');
       return $this->db->resultSet();
     }
 
     //exaple: db data - insert
-    public function addPerson($fn, $ln, $dob) {
+    public function addMessage($em, $msg) {
       
       //Adding data to database
-      $this->db->query('INSERT INTO  tbl_people (FNAME, LNAME, DOB) VALUES (:fn, :ln, :dob)');
+      $this->db->query('INSERT INTO tbl_emails (EMAIL, MSG) VALUES (:em, :msg)');
 
       //Binding Variables
-      $this->db->bind(':fn', $fn);
-      $this->db->bind(':ln', $ln);
-      $this->db->bind(':dob', $dob);
+      $this->db->bind(':em', $em);
+      $this->db->bind(':msg', $msg);
 
       //Return true or false, based on if query is successful or not
       if($this->db->execute()) {
