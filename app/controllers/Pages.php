@@ -68,7 +68,7 @@
                 header("Location: ".URLROOT."pages/index");
             } catch(Exception $e){
                 //Something went bad
-                echo "Fail - " . $mail->ErrorInfo;
+                echo "<h1>Fail - </h1>" . $mail->ErrorInfo;
             }
           } 
         } 

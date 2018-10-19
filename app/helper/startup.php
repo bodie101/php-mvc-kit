@@ -9,7 +9,7 @@
     define ("DBPASS", "user1234");
     define ("DBNAME", "containerdb");
 
-    define ("GUSER", "");
-    define ("GPASS", "");
+    define ("GUSER", "jeffrey.kranenburg@g.toiohomai.ac.nz");
+    define ("GPASS", "JiPhone8267");
 
 ?>
